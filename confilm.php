@@ -7,21 +7,16 @@
 </head>
 <body>
   <form method="POST" action="index.php">
-    名前: 
-    <?php makeConfirm('name') ?>
-    <br>
-    e-mail:
-    <?php makeConfirm('email') ?>
-    <br>
-    件名:
-    <?php makeConfirm('title') ?>
-    <br>
-    <?php makeConfirm('msg') ?>
-    <br>
+    名前: <?php makeConfirm('name') ?><br>
+    e-mail:<?php makeConfirm('email') ?><br>
+    件名:<?php makeConfirm('title') ?><br>
+    <?php makeConfirm('msg') ?><br>
+    同意: <?php makeConfirm('agree'); ?><br>
     <input type="submit" name="back" value="もどる">
     <input type="submit" name="send" value="送信">
     <input type="hidden" name="csrf" value="<?php makeCsrf(); ?>">
 
   </form>
 </body>
+</html>
 </html>
